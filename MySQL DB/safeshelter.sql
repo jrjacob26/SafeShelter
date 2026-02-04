@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2026 at 08:04 AM
+-- Generation Time: Feb 04, 2026 at 08:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,13 +34,6 @@ CREATE TABLE `admins` (
   `password` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `admins`
---
-
-INSERT INTO `admins` (`id`, `admin_name`, `email`, `password`, `created_at`) VALUES
-(1, 'Christopher M. Jacob Jr', '07207169@dwc-legazpi.edu', '$2y$10$FfFZfhuINjVbOquhDf4u6.UkhJ/cO3G2Y1liRw9xEKJQo0/9xWDqu', '2026-02-04 06:17:41');
 
 -- --------------------------------------------------------
 
@@ -75,29 +68,6 @@ CREATE TABLE `checkins` (
   `center_id` int(11) DEFAULT NULL,
   `checkin_time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `checkins`
---
-
-INSERT INTO `checkins` (`id`, `user_id`, `center_id`, `checkin_time`) VALUES
-(1, 1, 2, '2026-02-04 06:51:29'),
-(2, 1, 2, '2026-02-04 06:51:31'),
-(3, 1, 2, '2026-02-04 06:51:32'),
-(4, 1, 2, '2026-02-04 06:51:32'),
-(5, 1, 2, '2026-02-04 06:51:32'),
-(6, 1, 2, '2026-02-04 06:51:33'),
-(7, 1, 2, '2026-02-04 06:51:33'),
-(8, 1, 2, '2026-02-04 06:51:34'),
-(9, 1, 2, '2026-02-04 06:51:34'),
-(10, 1, 1, '2026-02-04 06:51:36'),
-(11, 1, 1, '2026-02-04 06:51:36'),
-(12, 1, 1, '2026-02-04 06:51:36'),
-(13, 1, 1, '2026-02-04 06:51:37'),
-(14, 1, 1, '2026-02-04 06:51:37'),
-(15, 1, 1, '2026-02-04 06:51:37'),
-(16, 1, 1, '2026-02-04 06:51:38'),
-(17, 1, 1, '2026-02-04 06:51:38');
 
 -- --------------------------------------------------------
 
@@ -150,13 +120,6 @@ CREATE TABLE `users` (
   `password` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `fullname`, `email`, `password`, `created_at`) VALUES
-(1, 'Christopher M. Jacob Jr', '07207169@dwc-legazpi.edu', '$2y$10$WRVYR8twxMgBtTo1.m889OtWRveXzwvdOEhbxyyp3oBwb3x9kvFhK', '2026-02-04 06:38:03');
 
 --
 -- Indexes for dumped tables
